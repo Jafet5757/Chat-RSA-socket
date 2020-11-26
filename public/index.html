@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-JKM-DLO</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <h1>JKM-DLO</h1>
+
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="actions"></div>
+        </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button id="send">Send</button>
+
+        <button id="sendK" onclick="change()">Send key</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="RSA.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
